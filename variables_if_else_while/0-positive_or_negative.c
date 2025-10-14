@@ -14,9 +14,9 @@ if(n > 0);{
 printf("is positive\n");
 else if(n < 0);
 printf("is positive\n");
-else(n < -0);
+else{
 printf("is positive\n");
 }
-
+}
 	return (0);
 }
