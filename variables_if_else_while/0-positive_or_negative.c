@@ -3,7 +3,8 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
-*if (n > 0)
+* main - if (n > 0)
+* Return: if else
 */
 /* betty style doc for function main goes there */
 int main(void)
