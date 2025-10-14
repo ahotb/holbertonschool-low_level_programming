@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-*main-puts Hello, puts
+*main -puts Hello, puts
 *Return: 0 on tru
 */
 int main(void)
