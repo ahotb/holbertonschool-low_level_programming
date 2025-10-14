@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*my frst c
-*
+/*
+*main-puts
+*return: 0 on tru
 */
 int main(void)
 {
