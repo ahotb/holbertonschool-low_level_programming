@@ -10,7 +10,7 @@ int main(void)
 {
 int un;
 for (un = '0'; un <= '9'; un++)
-putchar('0' +un);
+putchar('0' + un);
 if (un != 9)
 {
 putchar(',');
