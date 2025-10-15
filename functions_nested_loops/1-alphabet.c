@@ -1,8 +1,10 @@
 #include "main.h"
 /**
-* main - Entry point
+* print_alphabet - prints the alphabet in lowercase
 *
-* Return: Always 0 (Success)
+* Description: This function prints all lowercase letters
+* of the English alphabet, followed by a new line,
+* using the _putchar function only.
 */
 void print_alphabet(void)
 {
