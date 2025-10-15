@@ -14,7 +14,6 @@ putchar('0' + un);
 if (un != 9)
 {
 putchar(',');
-putchar(' ');
 }
 putchar('\n');
 return (0);
