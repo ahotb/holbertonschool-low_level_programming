@@ -1,18 +1,18 @@
 #include "main.h"
-
 /**
- * times_table - prints the 9 times table
- *
- * Description: Prints multiplication table of 9
- * Return: void
- */
+* times_table - prints the 9 times table, starting with 0
+*
+* Return: void
+*/
 void times_table(void)
 {
-int i, result;
+int i, j, result;
 for (i = 0; i <= 9; i++)
 {
-result = i * 9;
-if (i == 0)
+for (j = 0; j <= 9; j++)
+{
+result = i * j;
+if (j == 0)
 {
 _putchar('0');
 }
@@ -33,4 +33,5 @@ _putchar((result % 10) + '0');
 }
 }
 _putchar('\n');
+}
 }
