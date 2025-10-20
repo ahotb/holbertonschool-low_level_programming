@@ -3,7 +3,7 @@
 /**
 * print_square- checks for uppercase character
 *
-* @n: oen back
+* @size: oen back
 * Return: 1 if c is uppercase, 0 otherwise
 */
 void print_square(int size)
