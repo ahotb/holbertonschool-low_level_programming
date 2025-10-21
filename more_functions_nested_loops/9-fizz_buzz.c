@@ -18,9 +18,10 @@ else if (x % 5 == 0)
 {
 printf("Buzz ");
 }
-else 
+else
 {
 printf(" %d ",x);
 }
+printf("\n");
 return (0);
 }
