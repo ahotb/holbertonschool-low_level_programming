@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
 * main - prints numbers 1-100 with Fizz, Buzz, FizzBuzz
-*
-* @FizzBuzz: oen back
+* @ Buzz: one back
+* @ Fizz: oen back
 * Return: 1 if c is uppercase, 0 otherwise
 */
 int main(void)
@@ -24,7 +24,7 @@ printf("Buzz");
 }
 else
 {
-printf("%d",x);
+printf("%d", x);
 }
 if (x < 100)
 {
