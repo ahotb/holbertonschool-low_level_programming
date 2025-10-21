@@ -13,14 +13,11 @@ if (size > 0)
 {
 for (x = 0; x < size; x++)
 {
-for (c = 0; c > size - x - 1; c++)
+for (c = 0; c < size - x -1; c++)
 {
 _putchar(' ');
 }
-for (c = 0; c > size + x + 1; c++)
-{
 _putchar('#');
-}
 _putchar('\n');
 }
 }
