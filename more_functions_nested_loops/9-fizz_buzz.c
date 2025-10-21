@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* print_line- checks for uppercase character
+* main - prints numbers 1-100 with Fizz, Buzz, FizzBuzz
 *
 * @FizzBuzz: oen back
 * Return: 1 if c is uppercase, 0 otherwise
