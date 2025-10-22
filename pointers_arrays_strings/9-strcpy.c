@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-* *_strcpy - one  pointer
-* @*dest: pointer to a char
-* @*src: pointer to a char
+* _strcpy - one  pointer
+* @dest: pointer to a char
+* @src: pointer to a char
 * Return: void
 */
 char *_strcpy(char *dest, char *src)
