@@ -16,5 +16,5 @@ for (i = 0; s[i] != '\0'; i++)
 {
 c++;
 }
-return (0);
+return (c);
 }
