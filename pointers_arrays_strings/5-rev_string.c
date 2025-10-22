@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_rev - one  pointer
+* rev_string - one  pointer
 * @s: pointer to an int
 *
 * Return: void
