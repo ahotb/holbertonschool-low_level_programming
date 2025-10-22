@@ -13,7 +13,14 @@ int i;
 int n;
 int x;
 for (n = 0; str[n] != '\0' ;n++)
-x = ( n +1) / 2;
+if (n % 2 == 0)
+{
+x = n / 2;
+}
+else 
+{
+x = (n + 1) / 2;
+}
 for (i = x; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
