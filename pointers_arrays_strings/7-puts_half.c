@@ -13,7 +13,7 @@ int i;
 int n;
 int x;
 for (n = 0; str[n] != '\0'; n++)
-        ;
+;
 if (n % 2 == 0)
 {
 x = n / 2;
