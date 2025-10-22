@@ -3,7 +3,7 @@
 
 /**
 * _puts - one  pointer
-* @s: pointer to an int
+* @str: pointer to an int
 *
 * Return: void
 */
