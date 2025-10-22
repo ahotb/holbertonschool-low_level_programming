@@ -15,7 +15,7 @@ while (s[srt] != '\0')
 {
 srt++;
 }
-for (i = srt - 1; s[i] >= '\0'; i--)
+for (i = srt - 1; i >= '\0'; i--)
 {
 _putchar(s[i]);
 }
