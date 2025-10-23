@@ -9,22 +9,24 @@
 */
 int _atoi(char *s)
 {
-int i;
-int sng = 1;
-int r = 0;
-for (i = 0; s[i] != '\0' && !(s[i] >= '0' && s[i] <= '9') && s[i] != '+' && s[i] != '-'; i++)
-;
-for ( ;s[i] == '+' || s[i] == '-'; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
-if (s[i] == '-')
+if (s[i] == '-' && !found_digit)
 {
-sng = sng * - 1;
+sign *= -1;
 }
-}
-for ( ; s[i] >= '0' && s[i] <= '9'; i++)
+else if (s[i] == '+' && !found_digit)
 {
-r = r * 10 + (s[i] - '0');
 }
-return (r * sng);
+else if (s[i] >= '0' && s[i] <= '9')
+{
+found_digit = 1;
+result = result * 10 + (s[i] - '0');
 }
-
+else if (found_digit)
+{
+break;
+}
+}
+return (result * sign);
+}
