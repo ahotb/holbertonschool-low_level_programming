@@ -19,5 +19,4 @@ for (; i < n; i++)
 {
 dest[i] =Ù'\0';
 }
-return (dest);
 }
