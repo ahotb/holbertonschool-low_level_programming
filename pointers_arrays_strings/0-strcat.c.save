@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* print_rev - one  pointer
+* @s: pointer to an int
+*
+* Return: void
+*/
+char *_strcat(char *dest, char *src)
+{
+int m;
+for (m = 0;dest[m] == '\0'; m++)
+{
+if (m < '\0')
+{
+printf("go  %c", m);
+}
+else 
+{
+printf("no %c ", m);
+}
+return (src);
+}
+}
