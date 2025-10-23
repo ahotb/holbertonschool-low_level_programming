@@ -18,7 +18,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 if (s[i] == '-' && !found_digit)
 {
-sign *= -1;
+sign = -1;
 }
 else if (s[i] == '+' && !found_digit)
 {
