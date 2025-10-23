@@ -9,6 +9,11 @@
 */
 int _atoi(char *s)
 {
+int i;
+int sign = 1;
+int result = 0;
+int found_digit = 0;
+
 for (i = 0; s[i] != '\0'; i++)
 {
 if (s[i] == '-' && !found_digit)
