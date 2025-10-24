@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * string_toupper - copies a string
- * @s add the ponters
+ * @s: add the ponters
  *
  *
  * Return: pointer to dest
