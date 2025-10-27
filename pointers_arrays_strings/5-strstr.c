@@ -14,10 +14,14 @@ for (i = 0; haystack[i] != '\0'; i++)
 {
 for (d = 0; needle[d] != '\0'; d++)
 {
-if (haystack[i] == needle[d])
+if (haystack[i + d] != needle[d])
 {
-return ();
+break;
 }
+}
+if (needle[d] == '\0')
+{
+return (haystack + i);
 }
 }
 return (NULL);
