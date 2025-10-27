@@ -2,24 +2,29 @@
 #include <stdio.h>
 
 /**
-* _strchr - one  pointer
-* @c : pointer to an int
+* _strspn - one  pointer
 * @s : pointer to an int
+* @accept : pointer to an int
 * Return: void
 */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-int i;
+unsigned int c;
+int i, d;
 for (i = 0; s[i] != '\0'; i++)
 {
-if (s[i] == c)
+for (d = 0; accept[d] != '\0'; d++)
 {
-return (s + i);
-}
-}
-if (s[i] == c)
+if (s[i] == accept[d])
 {
-return (s + i);
+break;
 }
-return (NULL);
+}
+if (accept[d] == '\0')
+{
+break;
+}
+c++;
+}
+return (c);
 }
