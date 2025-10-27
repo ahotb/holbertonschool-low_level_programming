@@ -4,8 +4,8 @@
 /**
 * _memset - one  pointer
 * @s: pointer to an int
-* @b:
-* @n:
+* @b : pointer to an int
+* @n : pointer to an int
 * Return: void
 */
 char *_memset(char *s, char b, unsigned int n)
