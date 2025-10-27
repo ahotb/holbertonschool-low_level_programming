@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* __memcpy - one  pointer
+* _memcpy - one  pointer
 * @dest : pointer to an int
 * @src : pointer to an int
 * @n : pointer to an int
