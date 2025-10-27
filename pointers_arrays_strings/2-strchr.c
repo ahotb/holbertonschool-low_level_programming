@@ -16,10 +16,10 @@ if (s[i] == c)
 {
 return (s + i);
 }
+}
 if (s[i] == c)
 {
 return (s + i);
-}
 }
 return (NULL);
 }
