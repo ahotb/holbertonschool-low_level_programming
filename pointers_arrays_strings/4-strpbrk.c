@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _strspn - one  pointer
+* _strpbrk - one  pointer
 * @s : pointer to an int
 * @accept : pointer to an int
 * Return: void
