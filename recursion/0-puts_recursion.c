@@ -1,12 +1,9 @@
 #include "main.h"
 
-/*
-* _puts_recursion - frest
-* @ s : obshin
-*
-*
+/**
+*_puts_recursion - To print a text string
+* @s : obshin
 * @ Return : 0/1
-*
 */
 
 void _puts_recursion(char *s)
