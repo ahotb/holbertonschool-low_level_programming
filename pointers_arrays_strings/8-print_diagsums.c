@@ -16,5 +16,5 @@ for (i = 0; i < size; i++)
 su1 += a[i * size + i];
 su2 += a[i * size + (size - 1 - i)];
 }
-printf("%d,  %d\n", su1, su2);
+printf("%d, %d\n", su1, su2);
 }
