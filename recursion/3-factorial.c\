@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+* factorial- To print a text string
+* @n : obshin
+* Return: 0/1
+*/
+int factorial(int n)
+{
+if (*s == '\0')
+{
+return (0);
+
+}
+return (1 +  _strlen_recursion(n + 1));
+}
+
