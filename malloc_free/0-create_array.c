@@ -17,15 +17,16 @@ char *arr;
 arr = malloc(size * sizeof(char));
 if (size == 0)
 {
-return ("null");
+return NULL;
 }
-if (arr == 0)
+if (arr == NULL)
 {
-return ("null");
+return NULL;
 }
 for (i = 0; i < size; i++)
 {
 arr[i] = c;
 }
+
 return (arr);
 }
