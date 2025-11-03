@@ -21,8 +21,12 @@ return (NULL);
 for (cu = 0; str[cu] != '\0'; cu++)
 ;
 cu += 1;
-c = malloc(cu * sizeof(char));
 
+c = malloc(cu *sizeof(char));
+if (c == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < cu; i++)
 {
 c[i] = str[i];
