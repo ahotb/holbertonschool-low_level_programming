@@ -14,11 +14,11 @@ int i, t, cu, cu2;
 char *c;
 if (s1 == NULL)
 {
-s1 = " ";
+s1 = "";
 }
 if (s2 == NULL)
 {
-s2 = " ";
+s2 = "";
 }
 for (cu = 0; s1[cu] != '\0'; cu++)
 ;
