@@ -12,5 +12,7 @@
 
 void *malloc_checked(unsigned int b)
 {
+void *i;
+i = malloc(b);
 
 }
