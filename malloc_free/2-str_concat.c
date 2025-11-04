@@ -14,18 +14,16 @@ int i, t, cu, cu2;
 char *c;
 if (s1 == NULL)
 {
-s1 = "";
+s1 = " ";
 }
 if (s2 == NULL)
 {
-s2 = "";
+s2 = " ";
 }
 for (cu = 0; s1[cu] != '\0'; cu++)
 ;
-cu += 1;
 for (cu2 = 0; s2[cu2] != '\0'; cu2++)
 ;
-cu2 += 1;
 c = malloc(sizeof(char) * (cu + cu2 + 1));
 if (c == NULL)
 {
