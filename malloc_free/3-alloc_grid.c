@@ -11,27 +11,31 @@
 
 int **alloc_grid(int width, int height)
 {
-int cu1, cu2, i, t, tnp;
-if (width == NULL) || height == NULL))
+int n, i, t;
+if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-for (cu1 = 0; width[cu1] != '\0'; cu1++)
-;
-for (cu2 = 0; height[cu2] != '\0'; cu2++)
-;
-tnp = malloc(sizeof(int) * (cu1 + cu2 + 1));
-if (width == NULL) || height == NULL))
+int **temp = malloc(height * sizeof(int *));
+if (temp == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < width[cu1]; i++)
+for (i = 0; i < height; i++)
 {
-tnp[i] = width[cu1];
-}
-for (t = 0; t < height[cu2]; t++)
+temp[i] = malloc(width * sizeof(int *));
+if (temp[i] == NULL)
 {
-tnp[i + t] = height[cu2];
+for (int j = 0; j < i; j++)
+frre(temp[j]);
+frre(temp);
+return (NULL);
 }
-return (tnp[i + t]);
+for (t = 0; t < height; t++)
+{
+for (n = 0; n < width; n++)
+{
+temp[t][n] = (0);
+}
+}
 }
