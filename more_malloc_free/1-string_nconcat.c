@@ -24,11 +24,10 @@ if (s1 == NULL)
 s1 = "";
 }
 for (cu = 0; s2[cu] != '\0'; cu++)
-{
+;
 if (n > cu)
 {
 n = cu;
-}
 }
 for (cunt1 = 0; s1[cunt1] != '\0'; cunt1++)
 ;
