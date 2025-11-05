@@ -13,7 +13,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int cunt1, cunt2;
+unsigned int i, t, cunt1;
 char *temp;
 if (s2 == NULL)
 {
@@ -25,9 +25,14 @@ s1 = "";
 }
 for (cunt1 = 0; s1[cunt1] != '\0'; cunt1++)
 ;
-for (cunt2 = 0; cunt2 < n; cunt2++)
-;
 temp = malloc(cunt1 + n + 1);
-tmep = cunt1[
+for (t = 0; t < cunt1; t++)
+{
+temp[t] = s1[t];
+}
+for (i = 0 ; i < n; i++)
+{
+temp[t + i] = s2[i];
+}
 return (temp);
 }
