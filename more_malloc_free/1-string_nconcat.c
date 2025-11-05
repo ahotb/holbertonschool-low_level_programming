@@ -32,6 +32,10 @@ n = cu;
 for (cunt1 = 0; s1[cunt1] != '\0'; cunt1++)
 ;
 temp = malloc(cunt1 + n + 1);
+if (temp == NULL)
+{
+return (NULL);
+}
 for (t = 0; t < cunt1; t++)
 {
 temp[t] = s1[t];
