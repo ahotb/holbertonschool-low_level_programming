@@ -13,21 +13,18 @@
  */
 int *array_range(int min, int max)
 {
-unsigned int i, cunt1, cu;
+unsigned int array;
 int *temp;
 if (min > max)
 {
 return (NULL);
 }
-cu = mni + max + 1;
-temp = malloc(cu);
+array = min * max
+
+temp = malloc(array);
 if (temp == NULL)
 {
 return (NULL);
-}
-for (i = 0; cu[i] < cu ; i++)
-{
-tepm[i] = cu;
 }
 return (temp);
 }
