@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-#include <string.h>
 /**
  * calloc- prints buffer in hexa
  * @nmemb,: the address of memory to print
@@ -12,8 +11,8 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int total;
-void *temp;
+unsigned int total, i;
+char *temp;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
@@ -24,6 +23,9 @@ if (temp == NULL)
 {
 return (NULL);
 }
-memset(temp, 0, total);
+for (i = 0; i < total ; i++)
+{
+temp[i] = 0;
+}
 return (temp);
 }
