@@ -21,14 +21,13 @@ if (min > max)
 return (NULL);
 }
 array = max - min + 1;
-
 temp = malloc(array * sizeof(int));
 if (temp == NULL)
 {
 return (NULL);
 }
 
-while ( min != max)
+while ( min < max + 1)
 {
 temp[y] = min;
 y++;
