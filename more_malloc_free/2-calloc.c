@@ -12,11 +12,19 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int i, t, cunt1, cu;
-char *temp;
-
-if (temp == NULL)
+unsigned int i, total;
+void *temp;
+if (nmemb == 0 || size == 0)
+{
 return (NULL);
+}
+total = nmemb * size;
+temp = malloc(total);
+if (temp == NULL)
+{
+return (NULL);
+}
+memset(temp, 0, total);
 }
 return (temp);
 }
