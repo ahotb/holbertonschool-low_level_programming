@@ -4,10 +4,9 @@
 #include <limits.h>
 
 /**
- * string_nconcat- prints buffer in hexa
- * @s1: the address of memory to print
- * @s2: the address of memory to print
- * @n: the address of memory to print
+ * array_range- prints buffer in hexa
+ * @min: the address of memory to print
+ * @max: the address of memory to print
  *
  * Return: Nothing.
  */
@@ -21,13 +20,13 @@ if (min > max)
 return (NULL);
 }
 array = max - min + 1;
-temp = malloc(array * sizeof(int));
+temp = malloc(array *sizeof(int));
 if (temp == NULL)
 {
 return (NULL);
 }
 
-while ( min < max + 1)
+while (min < max + 1)
 {
 temp[y] = min;
 y++;
