@@ -5,10 +5,10 @@
  * @name: Pointer to dog's name.
  * @age: Age of the dog as a float.
  * @owner: Pointer to owner's name.
- *
- * This struct holds essential data about a dog. 
- */ 
-struct dog{
+ * This struct holds essential data about a dog.
+ */
+struct dog
+{
 char *name;
 float age;
 char *owner;
