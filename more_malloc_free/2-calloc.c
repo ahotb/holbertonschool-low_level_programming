@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <limits.h>
 /**
- * calloc- prints buffer in hexa
- * @nmemb,: the address of memory to print
+ * _calloc- prints buffer in hexa
+ * @nmemb: the address of memory to print
  * @size: the address of memory to print
  *
  * Return: Nothing.
