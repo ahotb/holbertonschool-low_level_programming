@@ -1,6 +1,14 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+* print_dog- print name
+* @d : poirnts
+*
+*
+*
+*/
+
 void print_dog(struct dog *d)
 {
 if (d == NULL)
