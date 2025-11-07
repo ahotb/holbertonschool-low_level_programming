@@ -7,12 +7,13 @@
  * @owner: Pointer to owner's name.
  * This struct holds essential data about a dog.
  */
-struct dog
+typedef struct
 {
 char *name;
 float age;
 char *owner;
-};
-void print_dog(struct dog *d);
-void init_dog(struct dog *d, char *name, float age, char *owner);
+}dog_t;
+
+
+
 #endif
