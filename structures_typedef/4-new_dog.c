@@ -24,6 +24,7 @@ for (str = 0; name[str] != '\0'; str++)
 h->name = malloc(str + 1);
 if (h->name == NULL)
 {
+free(h);
 return (NULL);
 }
 for (i = 0; i <= str; i++)
@@ -36,6 +37,8 @@ for (s = 0; owner[s] != '\0'; s++)
 h->owner = malloc(s + 1);
 if (h->owner == NULL)
 {
+free(h->name);
+free(h);
 return (NULL);
 }
 for (t = 0; t <= s; t++)
