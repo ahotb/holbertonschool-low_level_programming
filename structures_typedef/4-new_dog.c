@@ -2,11 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* print_dog- print name
+* new_dog- print new_dog
 * @name : poirnts
 * @age : int
 * @owner : poirnts
 *
+* Return: Always 0.
 */
 
 dog_t *new_dog(char *name, float age, char *owner)
