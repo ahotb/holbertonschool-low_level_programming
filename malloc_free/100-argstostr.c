@@ -39,5 +39,5 @@ c++;
 c++;
 }
 *c = '\0';
-return;
+return (p);
 }
