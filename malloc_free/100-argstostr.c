@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * str_concat- prints buffer in hexa
- * @s1: the address of memory to print
- *  @s2: the address of memory to print
+ * argstostr- prints buffer in hexa
+ * @ac: the address of memory to print
+ *  @av: the address of memory to print
  * Return: Nothing.
  */
 char *argstostr(int ac, char **av)
@@ -24,7 +24,7 @@ for (len = 0; av[t][len] != '\0'; len++)
 total += len + 1;
 }
 }
-p = malloc(total +1);
+p = malloc(total + 1);
 if (p == NULL)
 return (NULL);
 c = p;
@@ -38,6 +38,7 @@ c++;
 *c = '\n';
 c++;
 }
-*c ='\0';
+*c = '\0';
 return (p);
+free(p);
 }
