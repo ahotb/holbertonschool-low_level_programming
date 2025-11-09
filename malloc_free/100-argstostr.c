@@ -35,9 +35,10 @@ char *argstostr(int ac, char **av)
             *c = av[i][j];
             c++;
         }
-}
+
         *c = '\n';
         c++;
+}
     *c = '\0';
     return (p);
 }
