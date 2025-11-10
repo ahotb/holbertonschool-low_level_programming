@@ -5,7 +5,7 @@
 * array_iterator - check the code
 * @array: check the code
 * @size: check the code
-*
+* @action :check the code
 *
 *
 * Return: Always 0.
