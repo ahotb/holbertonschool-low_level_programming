@@ -27,5 +27,5 @@ if (r != 0)
 return (i);
 }
 }
-return (0);
+return (r);
 }
