@@ -3,9 +3,9 @@
 
 /**
 * print_name - check the code
-* @name :
-* @f :
-* @ * :
+* @name: check the code
+* @f: check the code
+*
 *
 *
 * Return: Always 0.
