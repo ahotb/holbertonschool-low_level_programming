@@ -1,5 +1,4 @@
-#include "CALC_H"
-
+#include "calc.h"
 /**
 * op_add - check the code
 * @a : check the code
