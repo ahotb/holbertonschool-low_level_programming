@@ -4,7 +4,7 @@
 #include "calc.h"
 
 /**
- * mian - prints an integer
+ * main - prints an integer
  * @argc: the integer to print
  * @argv: chek.
  * Return: return.
