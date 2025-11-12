@@ -3,16 +3,16 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - check the code
+ * print_strings- check the code
  * @n : const.
  * @separator : n oen
  * Return: Always 0.
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list ba;
 unsigned int i;
-int num;
+char *str;
 if (n == 0)
 {
 printf("\n");
@@ -21,12 +21,20 @@ return;
 va_start(ba, n);
 for (i = 0; i < n; i++)
 {
+str = va_arg(ba, char *);
 if (i > 0 && separator != NULL)
 {
 printf("%s", separator);
 }
-num = va_arg(ba, int);
-printf("%d", num);
+
+if (str == NULL)
+{
+printf("(nil)");
+}
+else
+{
+printf("%s", str);
+}
 }
 printf("\n");
 va_end(ba);
