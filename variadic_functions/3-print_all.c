@@ -6,59 +6,66 @@
  *  print_all - check the code
  * @format : const.
  */
+
 void print_all(const char * const format, ...)
 {
    va_list ab;
    
 const char *p = format;
 char *separator = ", ";
-int printed_any = 0;
-char c; 
+int first = 1;
+int c; 
 int i; 
 double f; 
 char *s_val;
 
   va_start(ab, format);
-while (*p)
+while (*p != '\0')
 {
-     
-if (printed_any == 1)
-{
- printf("%s", separator);
-}
-printed_any++;
-switch (*p) {
-    case 'c':   
-    c = va_arg(ab, int);
-   printf("%c", c);
-   break;
-}
-
-switch(*p){
-    case 'i':
-    i = va_arg(ab, int);
-   printf("%d", i);
-   break;
-}
-switch(*p){
-    case 'f':
-   f = va_arg(ab, double);
-   printf("%f", f);
-   break;
-}
-switch(*p){
-    case 's':
-   s_val = va_arg(ab, char *);
-   printf("%s", s_val); 
-    if (s_val == NULL)
-{
-    printf("(nil)");
-}
-break;
-}
+            
+        
+    switch (*p) {
+            case 'c': {
+                 c = va_arg(ab, int); 
+                 if (!first)
+            printf(", ");
+                printf("%c", (char)c);
+                first = 0;
+                break;
+            }
+            case 'i': {
+                 i = va_arg(ab, int);
+                           if (!first)
+            printf(", ");
+                printf("%d", i);
+                first = 0;
+                break;
+            }
+            case 'f': {
+                f = va_arg(ab, double);
+                          if (!first)
+            printf(", ");
+                printf("%f", f);
+                first = 0;
+                break;
+            }
+            case 's': {
+                s_val = va_arg(ab, char *);
+                          if (!first)
+            printf(", ");
+                if (s_val == NULL) {
+                    printf("(nil)");
+                    first = 0;
+                } else {
+                    printf("%s", s_val);
+                }
+                break;
+            }
+            default:
+                break;
+        }
 
 p++;
-
 }
 
 printf("\n");
