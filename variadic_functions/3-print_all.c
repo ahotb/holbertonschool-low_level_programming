@@ -19,7 +19,7 @@ int i;
 double f;
 char *s_val;
 va_start(ab, format);
-while (*p != '\0')
+while (p && *p)
 {
 switch (*p) {
 case 'c':
@@ -40,7 +40,7 @@ break;
 case 's':
 s_val = va_arg(ab, char *);
 if (!s_val)
-s_val = "(nil)";
+printf("(nil)"), s_val;
 printf("%s%s", pe, s_val);
 pe = ", ";
 break;
