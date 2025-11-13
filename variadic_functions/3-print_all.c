@@ -19,7 +19,7 @@ int i;
 double f;
 char *s_val;
 va_start(ab, format);
-while (p && *p)
+while (*p)
 {
 switch (*p) {
 case 'c':
