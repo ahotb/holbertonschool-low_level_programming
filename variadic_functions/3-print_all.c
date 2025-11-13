@@ -8,21 +8,59 @@
  */
 void print_all(const char * const format, ...)
 {
+   va_list ab;
+   
 const char *p = format;
-int *s;
-char *separator = ", "
+char *separator = ", ";
+int printed_any = 0;
+char c; 
+int i; 
+double f; 
+char *s_val;
 
-va_list a;
-va_start(a, format);
+  va_start(ab, format);
 while (*p)
 {
-if (separator > 0)
-s += va_arg(a, int);
-printf("%c%d%f", s);
-p++;
+     
+if (printed_any == 1)
+{
+ printf("%s", separator);
 }
-if (s == NULL)
-printf("(nil)");
+printed_any++;
+switch (*p) {
+    case 'c':   
+    c = va_arg(ab, int);
+   printf("%c", c);
+   break;
+}
+
+switch(*p){
+    case 'i':
+    i = va_arg(ab, int);
+   printf("%d", i);
+   break;
+}
+switch(*p){
+    case 'f':
+   f = va_arg(ab, double);
+   printf("%f", f);
+   break;
+}
+switch(*p){
+    case 's':
+   s_val = va_arg(ab, char *);
+   printf("%s", s_val); 
+    if (s_val == NULL)
+{
+    printf("(nil)");
+}
+break;
+}
+
+p++;
+
+}
+
 printf("\n");
-va_end(a);
+va_end(ab);
 }
