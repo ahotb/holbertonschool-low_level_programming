@@ -34,7 +34,7 @@ i++;
 new_node->len = i;
 if (t == NULL)
 {
-*head = t;
+*head = new_node;
 return (*head);
 }
 while (t->next != NULL)
