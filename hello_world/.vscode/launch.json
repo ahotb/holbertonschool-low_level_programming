@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/E.W.T/Desktop/holbertonschool-low_level_programming/doubly_linked_lists",
-      "program": "c:/Users/E.W.T/Desktop/holbertonschool-low_level_programming/doubly_linked_lists/build/Debug/outDebug",
+      "cwd": "c:/Users/E.W.T/Desktop/holbertonschool-low_level_programming/hello_world",
+      "program": "c:/Users/E.W.T/Desktop/holbertonschool-low_level_programming/hello_world/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
