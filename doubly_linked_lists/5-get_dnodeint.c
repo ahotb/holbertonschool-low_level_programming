@@ -13,16 +13,14 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    dlistint_t *new_node = head;
-    unsigned int count = 0;
-
-    while (new_node != NULL)
-    {
-        if (count == index)
-            return new_node;
-        new_node = new_node->next;
-        count++;
-    }
-
-    return NULL;
+dlistint_t *new_node = head;
+unsigned int count = 0;
+while (new_node != NULL)
+{
+if (count == index)
+return (new_node);
+new_node = new_node->next;
+count++;
+}
+return (NULL);
 }
