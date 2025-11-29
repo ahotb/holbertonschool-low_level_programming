@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
-
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position
  * @h: double pointer to the head of the list
@@ -17,14 +16,10 @@ dlistint_t  *add_node;
 dlistint_t *current = *h;
 unsigned int i = 0;
 if (h == NULL)
-{
 return (NULL);
-}
 add_node = malloc(sizeof(dlistint_t));
 if (add_node == NULL)
-{
 return (NULL);
-}
 add_node->n = n;
 add_node->prev = NULL;
 add_node->next = NULL;
@@ -32,9 +27,7 @@ if (idx == 0)
 {
 add_node->next = *h;
 if (*h != NULL)
-{
 (*h)->prev = add_node;
-}
 *h = add_node;
 return (add_node);
 }
@@ -44,16 +37,12 @@ current = current->next;
 i++;
 }
 if (current == NULL)
-{
 free(add_node);
 return (NULL);
-}
 add_node->next = current->next;
 add_node->prev = current;
 if (current->next != NULL)
-{
 current->next->prev = add_node;
-}
 current->next = add_node;
-return add_node;
+return (add_node);
 }
