@@ -54,6 +54,6 @@ if (current->next != NULL)
 {
 current->next->prev = add_node;
 current->next = add_node;
-return add_node;
 }
+return add_node;
 }
