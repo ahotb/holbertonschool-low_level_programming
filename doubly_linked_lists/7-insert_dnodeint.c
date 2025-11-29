@@ -19,7 +19,7 @@ if (h == NULL)
 return (NULL);
 }
 dlistint_t *current = *h;
-int i = 0;
+unsigned int i = 0;
 add_node = malloc(sizeof(dlistint_t));
 if (add_node == NULL)
 {
