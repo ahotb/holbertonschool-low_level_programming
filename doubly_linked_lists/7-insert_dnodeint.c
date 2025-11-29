@@ -34,9 +34,9 @@ add_node->next = *h;
 if (*h != NULL)
 {
 (*h)->prev = add_node;
+}
 *h = add_node;
 return (add_node);
-}
 }
 while (i < idx - 1 && current != NULL)
 {
