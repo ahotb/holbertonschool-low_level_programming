@@ -18,15 +18,16 @@
 		int fd;
 		int len;
 		int n_writee;
+
 		if (filename == NULL)
 			return (-1);
-		
+
 		if (text_content == NULL)
 		{
 			fd = open(filename, O_WRONLY | O_APPEND);
 			if (fd == -1)
 			{
-				return(-1);
+				return (-1);
 			}
 				close(fd);
 				return(1);
@@ -36,7 +37,7 @@
 			fd = open(filename, O_WRONLY | O_APPEND);
 			if (fd == -1)
 			{
-				return(-1);
+				return (-1);
 			}
 			len = strlen(text_content);
 			n_writee = write(fd, text_content, len);
@@ -46,7 +47,7 @@
 				return (-1);
 			}
 				close(fd);
-				return(1);
+				return (1);
 		}
 
 	}
