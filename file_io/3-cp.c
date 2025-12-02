@@ -5,12 +5,6 @@
 #include <string.h>
 #include "main.h"
 /**
- * mian - copies the content of a file to another file
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0 on success, or exit with error code
- */
-/**
  * copy_file - copies the content of a file to another file
  * @fd_from: file descriptor of the source file
  * @fd_to: file descriptor of the destination file
@@ -36,6 +30,13 @@ int copy_file(int fd_from, int fd_to)
 	}
 	return (0);
 }
+/**
+ * main - copies the content of a file to another file
+ * @argc: number of command-line arguments
+ * @argv: array of command-line argument strings
+ *
+ * Return: 0 on success, or exits with error code (97-100) on failure
+ */
 int main(int argc, char *argv[])
 {
 	int fd_form, fd_to;
