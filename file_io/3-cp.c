@@ -10,7 +10,7 @@
  * @argv: array of arguments
  * Return: 0 on success, or exit with error code
  */
-/** 
+/**
  * copy_file - copies the content of a file to another file
  * @fd_from: file descriptor of the source file
  * @fd_to: file descriptor of the destination file
