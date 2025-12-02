@@ -41,7 +41,8 @@ int main(int argc, char *argv[])
 	fd_form = open(argv[1], O_RDONLY);
 	if (fd_form == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
@@ -59,7 +60,8 @@ int main(int argc, char *argv[])
 	{
 		close(fd_form);
 		close(fd_to);
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	if (close(fd_to) == -1)
 	{
