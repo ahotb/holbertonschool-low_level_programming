@@ -10,11 +10,31 @@
  * @argv: array of arguments
  * Return: 0 on success, exits with code on failure
  */
+int copy_file(int fd_from, int fd_to)
+{
+	char buffer[1024];
+	int n_read, n_written;
+
+	while ((n_read = read(fd_from, buffer, 1024)) > 0)
+	{
+	n_written = write(fd_to, buffer, n_read);
+	if (n_written == -1 || n_written != n_read)
+		{
+		return (-1);
+		}
+	}
+	if (n_read == -1)
+	{
+		return (-2);
+	}
+	
+	return (0);
+}
+
 int main(int argc, char *argv[])
 {
 	int fd_form, fd_to;
-	char buffer[1024];
-	int n_read, n_written;
+	int result;
 
 	if (argc != 3)
 	{
@@ -33,21 +53,18 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while ((n_read = read(fd_form, buffer, 1024)) > 0)
+	result = copy_file(fd_form, fd_to);
+	if (result == -1)
 	{
-	n_written = write(fd_to, buffer, n_read);
-	if (n_written == -1 || n_written != n_read)
-		{
-		close(fd_to);
 		close(fd_form);
+		close(fd_to);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
-		}
 	}
-	if (n_read == -1)
+	if (result == -2)
 	{
-		close(fd_to);
 		close(fd_form);
+		close(fd_to);
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
