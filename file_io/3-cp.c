@@ -5,10 +5,14 @@
 #include <string.h>
 #include "main.h"
 /**
- * main - copies the content of a file to another file
+ * mian - copies the content of a file to another file
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0 on success, exits with code on failure
+ * copy_file - copies the content of a file to another file
+ * @fd_from: file descriptor of the source file
+ * @fd_to: file descriptor of the destination file
+ *
+ * Return: 0 on success, -1 on write error, -2 on read error
  */
 int copy_file(int fd_from, int fd_to)
 {
