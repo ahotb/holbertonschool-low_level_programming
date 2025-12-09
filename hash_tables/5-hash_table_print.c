@@ -2,6 +2,10 @@
 #include <string.h>
 #include <stdio.h>
 
+/**
+ * hash_table_print - prints a hash table
+ * @ht: the hash table
+ */
 void hash_table_print(const hash_table_t *ht)
 {
 	long unsigned i = 0;
@@ -26,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			first = 0;
 		}
-		printf("\"%s\" = '%s'", lst->key, lst->value);
+		printf("\"%s\" : '%s'", lst->key, lst->value);
 		lst = lst->next;
 		}
 	}
