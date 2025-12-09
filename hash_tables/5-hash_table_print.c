@@ -30,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			first = 0;
 		}
-		printf("\"%s\" : '%s'", lst->key, lst->value);
+		printf("\"%s\": '%s'", lst->key, lst->value);
 		lst = lst->next;
 		}
 	}
