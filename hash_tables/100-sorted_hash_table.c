@@ -82,7 +82,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
 		return (0);
-
 	idx = key_index((unsigned char *)key, ht->size);
 	current = ht->array[idx];
 	while (current)
@@ -95,11 +94,9 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		}
 		current = current->next;
 	}
-
 	new_node = malloc(sizeof(shash_node_t));
 	if (!new_node)
 		return (0);
-
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
 	if (!new_node->key || !new_node->value)
@@ -109,7 +106,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0);
 	}
-
 	new_node->next = ht->array[idx];
 	ht->array[idx] = new_node;
 	new_node->sprev = NULL;
