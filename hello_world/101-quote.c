@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
-* main- some printf
+* main- some
 *
 * Return: return 1
 */
